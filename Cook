@@ -1,0 +1,14 @@
+import random
+
+print("What products do you want to make food from?")
+ingredients = input()
+name = ingredients.split(", ")
+print("I'll name this dish...")
+dish = "".join([i[0] for i in name])
+print(dish)
+print("to cook", dish, "we need:")
+act = ["mix and grind", "brew", "roast", "squeeze out all the jiuce"]
+howmany = len(act)
+act_number = random.randint(0, howmany - 1)
+print(act[act_number], "all our ingredients!")
+print("Yes!")
